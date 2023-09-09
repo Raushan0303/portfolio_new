@@ -1,0 +1,130 @@
+body{
+ background-image: url(/html/Untitled\ design.jpg);
+ margin: 0;
+ padding: 0;
+ display: inline;
+ /* display: flex; */
+ /* align-items: center; Vertically center the content */
+ /* height: 100vh; */
+}
+header{
+    /* background-color: rgb(170, 216, 216); */
+    text-align: center;
+     padding: 1px;
+     width: 100%;
+  }
+  header:hover{
+    background-color: powderblue;
+    transition: background-color 0.7s;
+  }
+nav{
+ text-align: center;
+ background-color: azure;
+ /* margin-left: 10px;
+ margin-right: 10px; */
+ 
+ padding: 10px;
+  width: 100%;
+}
+nav a {
+  padding: 10px 50px;
+  font-family: 'Belanosima', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none; /* Remove underline */
+}
+
+/* Rest of your CSS code */
+
+nav a:before {
+    content: " "; /* Add some content before the anchor text */
+    color: #e59292; /* Set the text color to red */
+    font-weight: bold; /* Make the text bold */
+   
+  }
+
+nav :hover{
+    border-radius:50px;
+    opacity: 0.8;
+    /* transform: scale(1.1); */
+    box-shadow: 3px 3px 5px #888888;
+    text-decoration: none;
+    cursor: pointer;
+    background-color: powderblue;
+   transition: background-color 0.7s;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align content to the bottom of the container */
+  text-align: center;
+  background-image: url(/html/mywebsiteimg3.jpg);
+  padding: 1px;
+  height: 800px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.content {
+  margin-bottom: 10px; /* Adjust this value to control the space above the text */
+}
+
+
+#tagline {
+  font-weight: bold; /* Make the text bold */
+  font-size: 34px; 
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 30vh;
+}
+.left {
+  flex: 1;
+  text-align: center;
+  background-image: url('https://plus.unsplash.com/premium_photo-1683309565422-77818a287060?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+
+}
+.right {
+  flex: 1;
+  text-align: center;
+  /* background-color: #333; Example background color for the right side */
+  background-image: url('https://images.unsplash.com/photo-1624696941338-934bf86c28b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjN8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60');
+  background-size: cover;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.left:hover, .right:hover {
+  transform: translateY(-20px); /* Move the text up on hover */
+  box-shadow: 20px 50px 70px rgba(19, 196, 212, 0.3);
+}
+.text-hidden {
+  opacity: 0.4;
+  transform: translateY(10px); /* Initially hide text below the box */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Add transition for opacity and movement */
+}
+.left:hover .text-hidden, .right:hover .text-hidden {
+  opacity: 1; /* Make text visible on hover */
+  transform: translateY(0); /* Move text up to its original position */
+}
+.me{
+  font-size: 2.5rem;
+   margin: 0;
+}
+.me2{
+  font-size: 1.25rem;
+}
+
+  
